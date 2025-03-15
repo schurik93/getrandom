@@ -1,0 +1,25 @@
+[package]
+name = "moon"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "moon"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = "0.31.0"
+anchor-spl = "0.31.0"
+solana-pubkey = "2.2.0"
+borsh = "1.5.5"
+curve25519-dalek = "3.2.1"
+spl-token = "3.5.0"
